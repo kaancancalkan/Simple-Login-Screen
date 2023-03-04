@@ -1,0 +1,32 @@
+<mvc:View controllerName="login.screen.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <form:SimpleForm editable="true"  >
+                <form:content>
+                <VBox
+                >
+                    <Label class="label" text="UserName" />
+                    <Input class="input" id="user" placeholder="Enter UserName" width="40%" />
+                    <Label text="Password" />
+                    <Input class="pswClass" id="psw" type="Password" placeholder="Enter Password" width="40%" />
+                </VBox>
+                    
+                    
+                </form:content>
+                
+                
+            </form:SimpleForm>
+             
+
+        </content>
+        	<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button icon="sap-icon://visits" text="Login" type="Accept" press="onButtonClick" />
+				
+			</OverflowToolbar>
+		</footer>
+        
+    </Page>
+    
+</mvc:View>
